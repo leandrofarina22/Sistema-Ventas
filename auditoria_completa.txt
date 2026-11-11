@@ -1,0 +1,186 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261111180142
+Username: LEANDRO_CHROME\Leandro Farina
+RunAs User: LEANDRO_CHROME\Leandro Farina
+Configuration Name: 
+Machine: LEANDRO_CHROME (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 7880
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\Leandro Farina\Desktop\auditoria_completa.txt
+PS C:\WINDOWS\system32> cd $HOME\Desktop
+PS C:\Users\Leandro Farina\Desktop> mkdir Sistema_Ventas
+
+
+    Directory: C:\Users\Leandro Farina\Desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        11/11/2026     18:02                Sistema_Ventas
+
+
+PS C:\Users\Leandro Farina\Desktop> cd sistema_ventas
+PS C:\Users\Leandro Farina\Desktop\sistema_ventas> mkdir Frontend, Backend, BaseDatos
+
+
+    Directory: C:\Users\Leandro Farina\Desktop\sistema_ventas
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        11/11/2026     18:05                Frontend
+d-----        11/11/2026     18:05                Backend
+d-----        11/11/2026     18:05                BaseDatos
+
+
+PS C:\Users\Leandro Farina\Desktop\sistema_ventas> echo "Version 1.0 del sistema de Ventas" > README.md
+>> ParameterBinding(Out-File): name="InputObject"; value="Version 1.0 del sistema de Ventas"
+PS C:\Users\Leandro Farina\Desktop\sistema_ventas> git init
+git : The term 'git' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ git init
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (git:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+git : The term 'git' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ git init
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (git:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Leandro Farina\Desktop\sistema_ventas> winget install --id Git.Git -e --source winget
+Found Git [Git.Git] Version 2.56.0.4
+This application is licensed to you by its owner.
+Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
+Downloading https://github.com/git-for-windows/git/releases/download/v2.56.0.windows.4/Git-2.56.0.4-64-bit.exe
+  ██████████████████████████████  63.7 MB / 63.7 MB
+Successfully verified installer hash
+Starting package install...
+Successfully installed
+PS C:\Users\Leandro Farina\Desktop\sistema_ventas> git init
+git : The term 'git' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ git init
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (git:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+git : The term 'git' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ git init
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (git:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Leandro Farina\Desktop\sistema_ventas> git version
+git : The term 'git' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ git version
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (git:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+git : The term 'git' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ git version
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (git:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Leandro Farina\Desktop\Sistema_Ventas> git init
+Reinitialized existing Git repository in C:/Users/Leandro Farina/Desktop/Sistema_Ventas/.git/
+PS C:\Users\Leandro Farina\Desktop\Sistema_Ventas> git add .
+
+PS C:\Users\Leandro Farina\Desktop\Sistema_Ventas> git commit -m "Dia 1: Despliegue de la estructura base"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\Leandro Farina\Desktop\Sistema_Ventas> git remote add origin https://github.com/leandrofarina22/Sistema-Ventas.git
+error: remote origin already exists.
+PS C:\Users\Leandro Farina\Desktop\Sistema_Ventas> echo "Conectando al servidor SQL..."> BaseDatos\conexion.ps1
+PS C:\Users\Leandro Farina\Desktop\Sistema_Ventas> ParameterBinding(Out-File): name="InputObject"; value="Conectando al servidor SQL..."
+PS C:\Users\Leandro Farina\Desktop\Sistema_Ventas> echo "actualizacion Dia 2:Modulo DB agregado" >>README.md
+>> ParameterBinding(Out-File): name="InputObject"; value="actualizacion Dia 2:Modulo DB agregado"
+PS C:\Users\Leandro Farina\Desktop\Sistema_Ventas> mkdir Pruebas_Unitarias 
+mkdir : An item with the specified name C:\Users\Leandro Farina\Desktop\Sistema_Ventas\Pruebas_Unitarias already exists.
+At line:1 char:1
++ mkdir Pruebas_Unitarias
++ ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceExists: (C:\Users\Leandr...uebas_Unitarias:String) [New-Item], IOException
+    + FullyQualifiedErrorId : DirectoryExist,Microsoft.PowerShell.Commands.NewItemCommand
+mkdir : An item with the specified name C:\Users\Leandro Farina\Desktop\Sistema_Ventas\Pruebas_Unitarias already
+exists.
+At line:1 char:1
++ mkdir Pruebas_Unitarias
++ ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceExists: (C:\Users\Leandr...uebas_Unitarias:String) [New-Item], IOException
+    + FullyQualifiedErrorId : DirectoryExist,Microsoft.PowerShell.Commands.NewItemCommand
+
+PS C:\Users\Leandro Farina\Desktop\Sistema_Ventas> git add .
+
+PS C:\Users\Leandro Farina\Desktop\Sistema_Ventas> git commit -m "Dia 2:Agregados, scripts de DB y carpetas de pruebas"
+[main 2695814] Dia 2:Agregados, scripts de DB y carpetas de pruebas
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\Leandro Farina\Desktop\Sistema_Ventas> git push
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 451 bytes | 112.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/leandrofarina22/Sistema-Ventas.git
+   e0eb857..2695814  main -> main
+PS C:\Users\Leandro Farina\Desktop\Sistema_Ventas> Stop- Transcript
+Stop- : The term 'Stop-' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ Stop- Transcript
++ ~~~~~
+    + CategoryInfo          : ObjectNotFound: (Stop-:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+Stop- : The term 'Stop-' is not recognized as the name of a cmdlet, function, script file, or operable program. Check
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ Stop- Transcript
++ ~~~~~
+    + CategoryInfo          : ObjectNotFound: (Stop-:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Leandro Farina\Desktop\Sistema_Ventas> Stop -Transcript
+Stop : The term 'Stop' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ Stop -Transcript
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (Stop:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+Stop : The term 'Stop' is not recognized as the name of a cmdlet, function, script file, or operable program. Check
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ Stop -Transcript
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (Stop:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Leandro Farina\Desktop\Sistema_Ventas> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20261111193143
+**********************
